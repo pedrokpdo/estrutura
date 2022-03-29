@@ -1,11 +1,22 @@
+import styles from './home.module.scss'
 import Head from 'next/head'
 export default function Home() {
   return (
     <>
       <Head>
-        <title>Inicio Ignews</title>
+        <title>Home Ignews</title>
       </Head>
-      <h1>Hello Word</h1>
+      <main className={styles.contentContainer}>
+        <section className={styles.hero}>
+          <span> 👏 Hey, welcome</span>
+          <h1>News about the <span>React</span> Word</h1>
+          <p>
+            Get acess to all publications <br />
+            <span>for $9.90 mouth</span>
+          </p>
+        </section>
+        <img src="/images/avatar.svg" alt="Girls Coding" />
+      </main>
     </>
   )
 }
